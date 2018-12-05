@@ -15,13 +15,14 @@ using ToDoList.Repositories;
 namespace ToDoList.API.Controllers
 {   
     [Route("api/[controller]")]
-    public class UsersController
+    public class UsersController : ControllerBase
     {
         private readonly IUserRepository repository;
         public UsersController(IUserRepository repository){
             this.repository = repository;
         }
         // GET api/todos
+        [Authorize]
         [HttpGet]
         public IEnumerable<UserDTO> Get()
         {
