@@ -11800,11 +11800,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\PC-Gamer\\Desktop\\TrabalhoG2\\ToDoList.MVC\\ToDoList.MVC.csproj",
+      "projectUniqueName": "c:\\Users\\PC-Gamer\\Desktop\\LPC2018-Junior\\ToDoList.MVC\\ToDoList.MVC.csproj",
       "projectName": "ToDoList.MVC",
-      "projectPath": "C:\\Users\\PC-Gamer\\Desktop\\TrabalhoG2\\ToDoList.MVC\\ToDoList.MVC.csproj",
+      "projectPath": "c:\\Users\\PC-Gamer\\Desktop\\LPC2018-Junior\\ToDoList.MVC\\ToDoList.MVC.csproj",
       "packagesPath": "C:\\Users\\PC-Gamer\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\PC-Gamer\\Desktop\\TrabalhoG2\\ToDoList.MVC\\obj\\",
+      "outputPath": "c:\\Users\\PC-Gamer\\Desktop\\LPC2018-Junior\\ToDoList.MVC\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
