@@ -1,45 +1,36 @@
-using System;
 using System.Collections.Generic;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToDoList.API.DTOs;
 using ToDoList.Domain;
 using ToDoList.Repositories.Interfaces;
-using Microsoft.IdentityModel.Tokens;
-using System.IdentityModel.Tokens.Jwt;
-using System.Text;
-using Microsoft.AspNetCore.Authorization;
-using System.Threading.Tasks;
-using System.Linq;
-using ToDoList.Repositories;
 
 namespace ToDoList.API.Controllers
-{   
-    
+{
     [Route("api/[controller]")]
-    public class UsersController : ControllerBase
+    public class AssociatedController : ControllerBase
     {
-        private readonly IUserRepository repository;
-        public UsersController(IUserRepository repository){
+        private readonly IAssociatedRepository repository;
+        public AssociatedController(IAssociatedRepository repository){
             this.repository = repository;
         }
         // GET api/todos
-        [Authorize]
         [HttpGet]
-        public IEnumerable<UserDTO> Get()
+        public IEnumerable<AssociatedDTO> Get()
         {
-            var users = this.repository.GetAll();
-            var usersDTO = new List<UserDTO>();
+            var ass = this.repository.GetAll();
+            var assDTO = new List<AssociatedDTO>();
 
-            users.ForEach(usuario => {
-                usersDTO.Add(
-                    new UserDTO{
-                        id = usuario.id, 
-                        name = usuario.name
+            ass.ForEach(item => {
+                assDTO.Add(
+                    new AssociatedDTO{
+                        id = item.id, 
+                        name = item.name
                     }
                 );
             });
 
-            return usersDTO;
+            return assDTO;
 
             // var users = this.repository.GetAll();
             // List<UserDTO> usersDTo = new List<UserDTO>();    
@@ -58,14 +49,14 @@ namespace ToDoList.API.Controllers
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public User Get(int id)
+        public Associated Get(int id)
         {
             return this.repository.GetById(id);
         }
 
         // POST api/Todos
         [HttpPost]
-        public IActionResult Post([FromBody]User item)
+        public IActionResult Post([FromBody]Associated item)
         {
             //caso nao grave
             if (ModelState.IsValid)
@@ -94,7 +85,7 @@ namespace ToDoList.API.Controllers
 
         // PUT api/Todos/
         [HttpPut]
-        public IActionResult Put([FromBody]User item)
+        public IActionResult Put([FromBody]Associated item)
         {
             this.repository.Update(item);
             return Ok(item);
@@ -109,36 +100,6 @@ namespace ToDoList.API.Controllers
                 message = "Deletado com sucesso.",
                 id = id
             });
-        }
-
-        [HttpPost("authenticate")]
-        public IActionResult Authentication([FromBody] User user)
-        {
-            var usuario = this.repository.AuthUser(user);
-
-            if(usuario == null)
-                return BadRequest(new {
-                    message = "Login e/ou senha incorreto(s)."
-                });
-
-            return Ok(new {
-                token = BuildToken()
-            });
-        }
-
-        public string BuildToken()
-        {
-            var key = new SymmetricSecurityKey(Encoding.UTF8.GetBytes("Aula15UlbraTorres"));
-            
-            var creed = new SigningCredentials(key, SecurityAlgorithms.HmacSha256);
-
-            var token = new JwtSecurityToken(
-                audience: "Aula15",
-                issuer: "Aula15",
-                signingCredentials: creed
-            );
-
-            return new JwtSecurityTokenHandler().WriteToken(token);
         }
     }
 }

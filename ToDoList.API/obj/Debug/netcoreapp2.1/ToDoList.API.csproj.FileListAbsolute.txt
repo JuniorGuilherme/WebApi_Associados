@@ -1,38 +1,19 @@
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.deps.json
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.runtimeconfig.json
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.runtimeconfig.dev.json
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.dll
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.pdb
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csprojAssemblyReference.cache
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csproj.CoreCompileInputs.cache
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorAssemblyInfo.cache
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorAssemblyInfo.cs
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.AssemblyInfoInputs.cache
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.AssemblyInfo.cs
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorTargetAssemblyInfo.cache
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.dll
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.pdb
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Domain.dll
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Repositories.dll
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Repositories.pdb
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Domain.pdb
-C:\Users\PC-Gamer\Desktop\TrabalhoG2\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csproj.CopyComplete
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.deps.json
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.runtimeconfig.json
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.runtimeconfig.dev.json
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.dll
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.pdb
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Domain.dll
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Repositories.dll
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Repositories.pdb
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Domain.pdb
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csprojAssemblyReference.cache
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csproj.CoreCompileInputs.cache
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorAssemblyInfo.cache
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorAssemblyInfo.cs
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.AssemblyInfoInputs.cache
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.AssemblyInfo.cs
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorTargetAssemblyInfo.cache
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csproj.CopyComplete
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.dll
-C:\Users\PC-Gamer\Desktop\LPC2018-Junior\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.pdb
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.deps.json
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.runtimeconfig.json
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.runtimeconfig.dev.json
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.dll
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.API.pdb
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Domain.dll
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Repositories.dll
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Repositories.pdb
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\bin\Debug\netcoreapp2.1\ToDoList.Domain.pdb
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csprojAssemblyReference.cache
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csproj.CoreCompileInputs.cache
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorAssemblyInfo.cache
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorAssemblyInfo.cs
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.AssemblyInfoInputs.cache
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.AssemblyInfo.cs
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.RazorTargetAssemblyInfo.cache
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.csproj.CopyComplete
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.dll
+C:\Users\Notebook Dell\Desktop\TrabalhoG2_LPC\WebApi_Associados\ToDoList.API\obj\Debug\netcoreapp2.1\ToDoList.API.pdb

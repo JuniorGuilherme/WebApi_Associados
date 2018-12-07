@@ -57,6 +57,7 @@ namespace ToDoList.API
             });
 
             services.AddScoped<IUserRepository, UserRepository>();
+            services.AddScoped<IAssociatedRepository, AssociatedRepository>();
 
         }
 
@@ -74,6 +75,7 @@ namespace ToDoList.API
 
             app.UseHttpsRedirection();
             app.UseMvc();
+            app.UseAuthentication();
         }
     }
 }
