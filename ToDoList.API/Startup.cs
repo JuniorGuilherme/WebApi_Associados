@@ -74,8 +74,10 @@ namespace ToDoList.API
             }
 
             app.UseHttpsRedirection();
-            app.UseMvc();
+
             app.UseAuthentication();
+            app.UseMvc();
+        
         }
     }
 }
