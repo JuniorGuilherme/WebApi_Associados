@@ -1,42 +1,40 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.API.DTOs;
 using ToDoList.Domain;
 using ToDoList.Repositories.Interfaces;
 
 namespace ToDoList.API.Controllers
 {
     [Route("api/[controller]")]
-    public class AssociatedController : ControllerBase
+    public class KinShipController : ControllerBase
     {
-        private readonly IAssociatedRepository repository;
-        public AssociatedController(IAssociatedRepository repository){
+        private readonly IKinShipRepository repository;
+        public KinShipController(IKinShipRepository repository){
             this.repository = repository;
         }
         // GET api/todos
         [HttpGet]
-        public IEnumerable<AssociatedDTO> Get()
+        public IEnumerable<KinShip> Get()
         {
-            var ass = this.repository.GetAll();
-            var assDTO = new List<AssociatedDTO>();
+            var ks = this.repository.GetAll();
+            var ksList = new List<KinShip>();
 
-            ass.ForEach(item => {
-                assDTO.Add(
-                    new AssociatedDTO{
+            ks.ForEach(item => {
+                ksList.Add(
+                    new KinShip{
                         id = item.id, 
-                        name = item.name,
-                        cpf = item.cpf,
+                        status = item.status
                     }
                 );
             });
 
-            return assDTO;
+            return ksList;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Associated Get(int id)
+        public KinShip Get(int id)
         {
             return this.repository.GetById(id);
         }
@@ -44,11 +42,11 @@ namespace ToDoList.API.Controllers
         // POST api/Todos
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromBody]Associated item)
+        public IActionResult Post([FromBody]KinShip item)
         {
             //caso nao grave
             if (ModelState.IsValid)
-            {
+            {       
                     this.repository.Create(item);
                     return Ok(item);
             }
@@ -74,7 +72,7 @@ namespace ToDoList.API.Controllers
         // PUT api/Todos/
         [Authorize]
         [HttpPut]
-        public IActionResult Put([FromBody]Associated item)
+        public IActionResult Put([FromBody]KinShip item)
         {
             this.repository.Update(item);
             return Ok(item);

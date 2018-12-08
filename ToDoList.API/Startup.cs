@@ -58,7 +58,9 @@ namespace ToDoList.API
 
             services.AddScoped<IUserRepository, UserRepository>();
             services.AddScoped<IAssociatedRepository, AssociatedRepository>();
-
+            services.AddScoped<IDependentRepository, DependentRepository>();
+            services.AddScoped<IKinShipRepository, KinShipRepository>();
+            services.AddScoped<IMaritalStatusRepository, MaritalStatusRepository>();
         }
 
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.

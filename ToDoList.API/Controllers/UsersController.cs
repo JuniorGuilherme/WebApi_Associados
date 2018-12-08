@@ -57,6 +57,7 @@ namespace ToDoList.API.Controllers
         }
 
         // GET api/values/5
+        [Authorize]
         [HttpGet("{id}")]
         public User Get(int id)
         {
@@ -93,6 +94,7 @@ namespace ToDoList.API.Controllers
         }
 
         // PUT api/Todos/
+        [Authorize]
         [HttpPut]
         public IActionResult Put([FromBody]User item)
         {
@@ -101,6 +103,7 @@ namespace ToDoList.API.Controllers
         }
 
         // DELETE api/Todos/5
+        [Authorize]
         [HttpDelete("{id}")]
         public IActionResult Delete(int id)
         {

@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ToDoList.Domain;
 using ToDoList.Repositories.Interfaces;
@@ -16,6 +17,7 @@ namespace ToDoList.Repositories.Data
 
         public void Create(Associated ass)
         {
+            ass.maritalStatus = dataContext.MaritalStatus.Find(ass.maritalstatusid);
             dataContext.Entry(ass).State = EntityState.Added;
             dataContext.SaveChanges();
         }
@@ -31,7 +33,7 @@ namespace ToDoList.Repositories.Data
         }
         public Associated GetById(int id)
         {
-            return dataContext.Associated.SingleOrDefault(x=>x.id == id);
+            return dataContext.Associated.Include(d => d.depentents).SingleOrDefault(x=>x.id == id);
         }
         
         public void Delete(int id)
@@ -39,5 +41,16 @@ namespace ToDoList.Repositories.Data
             dataContext.Remove(GetById(id));
             dataContext.SaveChanges();
         }
+
+        public Task<List<Associated>> GetAllAsync()
+        {
+            return dataContext.Associated.ToListAsync();
+        }
+
+         public Task<Associated> GetByIdAsync(int id)
+        {
+            return dataContext.Associated.SingleOrDefaultAsync(x => x.id == id);
+        }
+
     }
 }

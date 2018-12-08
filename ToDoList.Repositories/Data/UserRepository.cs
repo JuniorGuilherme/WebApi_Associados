@@ -1,5 +1,6 @@
 using System.Collections.Generic;
 using System.Linq;
+using System.Threading.Tasks;
 using Microsoft.EntityFrameworkCore;
 using ToDoList.Domain;
 using ToDoList.Repositories.Interfaces;
@@ -21,7 +22,7 @@ namespace ToDoList.Repositories.Data
         }
         public List<User> GetAll()
         {
-            return dataContext.Users.ToList();
+            return dataContext.User.ToList();
         }
         
         public void Update(User user)
@@ -31,7 +32,7 @@ namespace ToDoList.Repositories.Data
         }
         public User GetById(int id)
         {
-            return dataContext.Users.SingleOrDefault(x=>x.id == id);
+            return dataContext.User.SingleOrDefault(x=>x.id == id);
         }
         
         public void Delete(int id)
@@ -43,9 +44,19 @@ namespace ToDoList.Repositories.Data
         public User AuthUser(User user)
         {
             return dataContext
-                    .Users
+                    .User
                     .SingleOrDefault(i => i.name == user.name && 
                                 i.password == user.password);
+        }
+
+        public Task<List<User>> GetAllAsync()
+        {
+            return dataContext.User.ToListAsync();
+        }
+
+         public Task<User> GetByIdAsync(int id)
+        {
+            return dataContext.User.SingleOrDefaultAsync(x => x.id == id);
         }
     }
 }

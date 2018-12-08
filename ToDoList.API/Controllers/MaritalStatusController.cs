@@ -1,42 +1,40 @@
 using System.Collections.Generic;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
-using ToDoList.API.DTOs;
 using ToDoList.Domain;
 using ToDoList.Repositories.Interfaces;
 
 namespace ToDoList.API.Controllers
 {
     [Route("api/[controller]")]
-    public class AssociatedController : ControllerBase
+    public class MaritalStatusController : ControllerBase
     {
-        private readonly IAssociatedRepository repository;
-        public AssociatedController(IAssociatedRepository repository){
+        private readonly IMaritalStatusRepository repository;
+        public MaritalStatusController(IMaritalStatusRepository repository){
             this.repository = repository;
         }
         // GET api/todos
         [HttpGet]
-        public IEnumerable<AssociatedDTO> Get()
+        public IEnumerable<MaritalStatus> Get()
         {
-            var ass = this.repository.GetAll();
-            var assDTO = new List<AssociatedDTO>();
+            var ms = this.repository.GetAll();
+            var msList = new List<MaritalStatus>();
 
-            ass.ForEach(item => {
-                assDTO.Add(
-                    new AssociatedDTO{
+            ms.ForEach(item => {
+                msList.Add(
+                    new MaritalStatus{
                         id = item.id, 
-                        name = item.name,
-                        cpf = item.cpf,
+                        status = item.status
                     }
                 );
             });
 
-            return assDTO;
+            return msList;
         }
 
         // GET api/values/5
         [HttpGet("{id}")]
-        public Associated Get(int id)
+        public MaritalStatus Get(int id)
         {
             return this.repository.GetById(id);
         }
@@ -44,11 +42,11 @@ namespace ToDoList.API.Controllers
         // POST api/Todos
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromBody]Associated item)
+        public IActionResult Post([FromBody]MaritalStatus item)
         {
             //caso nao grave
             if (ModelState.IsValid)
-            {
+            {       
                     this.repository.Create(item);
                     return Ok(item);
             }
@@ -74,8 +72,8 @@ namespace ToDoList.API.Controllers
         // PUT api/Todos/
         [Authorize]
         [HttpPut]
-        public IActionResult Put([FromBody]Associated item)
-        {
+        public IActionResult Put([FromBody]MaritalStatus item)
+        {   
             this.repository.Update(item);
             return Ok(item);
         }

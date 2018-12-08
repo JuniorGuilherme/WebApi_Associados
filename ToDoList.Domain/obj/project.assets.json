@@ -529,10 +529,11 @@
       ]
     },
     "Microsoft.NETCore.Platforms/2.1.0": {
-      "sha512": "TT+QCi9LcxGTjBssH7S7n5+8DVcwfG4DYgXX7Dk7+BfZ4oVHj8Q0CbYk9glzAlHLsSt3bYzol+fOdra2iu6GOw==",
+      "sha512": "aSTPL94NloSiQVL5Len8wbjFKOnoAX/vOh3s3DF6g3c7GUUMLCDvnBhmA72M2iN2AedyA8hpr7m89kzSAKUnJQ==",
       "type": "package",
       "path": "microsoft.netcore.platforms/2.1.0",
       "files": [
+        ".nupkg.metadata",
         ".signature.p7s",
         "LICENSE.TXT",
         "THIRD-PARTY-NOTICES.TXT",
@@ -786,23 +787,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Notebook Dell\\.nuget\\packages\\": {},
+    "C:\\Users\\PC-Gamer\\.nuget\\packages\\": {},
     "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "c:\\Users\\Notebook Dell\\Desktop\\TrabalhoG2_LPC\\WebApi_Associados\\ToDoList.Domain\\ToDoList.Domain.csproj",
+      "projectUniqueName": "c:\\Users\\PC-Gamer\\Desktop\\AssociadosApi\\WebApi_Associados\\ToDoList.Domain\\ToDoList.Domain.csproj",
       "projectName": "ToDoList.Domain",
-      "projectPath": "c:\\Users\\Notebook Dell\\Desktop\\TrabalhoG2_LPC\\WebApi_Associados\\ToDoList.Domain\\ToDoList.Domain.csproj",
-      "packagesPath": "C:\\Users\\Notebook Dell\\.nuget\\packages\\",
-      "outputPath": "c:\\Users\\Notebook Dell\\Desktop\\TrabalhoG2_LPC\\WebApi_Associados\\ToDoList.Domain\\obj\\",
+      "projectPath": "c:\\Users\\PC-Gamer\\Desktop\\AssociadosApi\\WebApi_Associados\\ToDoList.Domain\\ToDoList.Domain.csproj",
+      "packagesPath": "C:\\Users\\PC-Gamer\\.nuget\\packages\\",
+      "outputPath": "c:\\Users\\PC-Gamer\\Desktop\\AssociadosApi\\WebApi_Associados\\ToDoList.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files\\dotnet\\sdk\\NuGetFallbackFolder"
       ],
       "configFilePaths": [
-        "C:\\Users\\Notebook Dell\\AppData\\Roaming\\NuGet\\NuGet.Config"
+        "C:\\Users\\PC-Gamer\\AppData\\Roaming\\NuGet\\NuGet.Config"
       ],
       "originalTargetFrameworks": [
         "netcoreapp2.1"

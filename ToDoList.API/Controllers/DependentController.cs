@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using ToDoList.API.DTOs;
@@ -6,49 +7,50 @@ using ToDoList.Domain;
 using ToDoList.Repositories.Interfaces;
 
 namespace ToDoList.API.Controllers
-{
-    [Route("api/[controller]")]
-    public class AssociatedController : ControllerBase
+{   
+     [Route("api/[controller]")]
+    public class DependentController : ControllerBase
     {
-        private readonly IAssociatedRepository repository;
-        public AssociatedController(IAssociatedRepository repository){
+        private readonly IDependentRepository repository;
+        public DependentController(IDependentRepository repository){
             this.repository = repository;
         }
-        // GET api/todos
-        [HttpGet]
-        public IEnumerable<AssociatedDTO> Get()
-        {
-            var ass = this.repository.GetAll();
-            var assDTO = new List<AssociatedDTO>();
 
-            ass.ForEach(item => {
-                assDTO.Add(
-                    new AssociatedDTO{
+        [HttpGet]
+        public IEnumerable<DependentDTO> Get()
+        {
+            var dep = this.repository.GetAll();
+            var depList = new List<DependentDTO>();
+
+            dep.ForEach(item => {
+                depList.Add(
+                    new DependentDTO{
                         id = item.id, 
                         name = item.name,
-                        cpf = item.cpf,
+                        kinship = item.kinshipid.ToString(),
+                        birthDate = item.birthDate,
+                        associatedid = item.associatedid
                     }
                 );
             });
 
-            return assDTO;
+            return depList;
         }
 
-        // GET api/values/5
         [HttpGet("{id}")]
-        public Associated Get(int id)
+        public async Task<Dependent> Get(int id)
         {
-            return this.repository.GetById(id);
+            return await this.repository.GetByIdAsync(id);
         }
 
         // POST api/Todos
         [Authorize]
         [HttpPost]
-        public IActionResult Post([FromBody]Associated item)
+        public IActionResult Post([FromBody]Dependent item)
         {
             //caso nao grave
             if (ModelState.IsValid)
-            {
+            {       
                     this.repository.Create(item);
                     return Ok(item);
             }
@@ -74,7 +76,7 @@ namespace ToDoList.API.Controllers
         // PUT api/Todos/
         [Authorize]
         [HttpPut]
-        public IActionResult Put([FromBody]Associated item)
+        public IActionResult Put([FromBody]Dependent item)
         {
             this.repository.Update(item);
             return Ok(item);

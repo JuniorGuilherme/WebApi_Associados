@@ -1,4 +1,5 @@
 using System.Collections.Generic;
+using System.Threading.Tasks;
 
 namespace ToDoList.Repositories.Interfaces
 {
@@ -10,5 +11,7 @@ namespace ToDoList.Repositories.Interfaces
         void Update(Entity obj);
         Entity GetById(int id);
         void Delete(int id);
+        Task <Entity> GetByIdAsync(int id);
+        Task <List<Entity>> GetAllAsync();
     }
 }

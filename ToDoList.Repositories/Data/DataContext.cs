@@ -9,8 +9,10 @@ namespace ToDoList.Repositories
             : base(options)
         {}
 
-        public DbSet<User> Users { get; set; }
+        public DbSet<User> User { get; set; }
         public DbSet<Associated> Associated { get; set; }
-        public DbSet<Dependente> Dependente { get; set; }
+        public DbSet<Dependent> Dependent { get; set; }
+        public DbSet<KinShip> KinShip { get; set; }
+        public DbSet<MaritalStatus> MaritalStatus { get; set; }
     }
 }
